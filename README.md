@@ -1,6 +1,6 @@
 # homepage
 
-My first personal website. Basically it is just a résumé.
+My first personal website. Basically it is just a résumé. Binary_studio_academy
 
 ## Links :electric_plug:
 
