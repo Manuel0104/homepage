@@ -1,10 +1,230 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Résumé</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/75f0a34d16.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="assets/images/logo2.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">CV</a></li>
+            <li><a href="#portafolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p><span>A</span>I <span>D</span>eveloper</p>
+          <h1>
+            Hola!<br />
+            Hello!<br />
+            안녕하세요!<br />
+            I am <span>Manuel</span><br />
+            Flores from Peru
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!---------------about-------------->
+    <div id="about">
+      <div class="container">
+          <div class="row">
+              <div class="about-col-1">
+                  <img src="assets/images/myphoto2.png">
+              </div>
+              <div class="about-col-2">
+                  <h1 class="sub-title"> About me </h1>
+                  <p>I am a mechanical engineering and passionate tech-maker and<br>I aim to explore the use of deep learning in practical applications,<br> I am keen on exploring the use of deep learning in practical applications to automate inspection processes, enhancing efficiency, accuracy,<br> and safety in structural assessment, and optimize design methodologies. 
+                  <br> 
+                  </p>
+
+                  <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                      <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                      <p class="tab-links" onclick="opentab('Education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id = 'Skills'>
+                      <ul>
+                          <li><span>Computer-aided design software</span><br>Autodesk Inventor, Autodesk Fusion 360, Autodesk HSM CAM, Ansys Workbench</li>
+                          <li><span>Electronic Design</span><br>Autodesk Eagle</li>
+                          <li><span>Programming Languages and mathenatical packages</span><br>Python, C, Javascript, MATLAB, LaTeX</li>
+                          <li><span>Deep learning framework</span><br>Pytorch, Keras, Tensorflow</li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id = 'Experience'>
+                      <ul>
+                          <li>2022 - Present<br><span>Pusan National University</span><br>Research Assistant in Artificial Intelligence</li>
+                          <li>2019 - 2020<br><span>LYS filters</span><br>Product Engineer</li>
+                          <li>2017 - 2018<br><span>Kyp Bioengineering</span><br>Chief Technolgy Officer(CTO)</li>  
+                          <li>2016 - 2017<br><span>Peruvian Army</span><br>Research Assistant</li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id = 'Education'>
+                      <ul>
+                          <li>2022 - Present<br><span>Master student from Pusan National University (South Korea)</span><br>GPA: 3.9/4.0</li>
+                          <li>2012 - 2017<br><span>Bachelor degree from Callao National University (Peru)</span><br>GPA: 3.0/4.0</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!------------services----------->
+    <div id="services">
+      <div class="container">
+          <h1 class="sub-title"> Curriculum Vitae </h1>
+          <div class="services-list">
+              <div>
+                  <i class="fa-sharp fa-solid fa-file-pdf" style="color: #ffffff;"></i>
+                  <a href="assets/docs/MANUEL FERNANDO FLORES CUENCA ACADEMIC_CV_2.pdf">Have a look to my CV</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!------------portafolio--------->
+    <div id="portafolio">
+      <div class="container">
+          <div class="sub-title">Projects</div>
+          <div class="work-list">
+              <div class="work">
+                  <img src="assets/images/work-2.jpeg" >
+                  <div class="layer">
+                      <h3>Myoelectric Prosthetic Hand</h3>
+                      <p>The low-cost myoelectric prosthetic hand was designed for
+                      people that lost the lower arm. A sensory array was used to 
+                      catch the biosignals of the forearm to control the actuation
+                      micromotors.
+                      </p>
+                      <a href="assets/videos/prosthetic_hand.mp4"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="assets/images/work-3.png" >
+                  <div class="layer">
+                      <h3>Ultrasonic Tomography Image Segmentation</h3>
+                      <p> Image segmentation using deep convolution neural networks 
+                      (U-Net) was employed to enhance traditional ultrasonic tomographic
+                      image approach.</p>
+                      <a href="https://github.com/Manuel0104/Enhancement-ultrasonic-tomographic-image"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="assets/images/WEB_DEPLOYMENT_PHOTO_2.PNG" >
+                  <div class="layer">
+                      <h3>Flaw detection through UGWT and transformer encoder architecture</h3>
+                      <p>Adapting the transformer neural architecture for time-series signals classification</p>
+                      <a href="assets/videos/Media1 - Trim.mp4"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="assets/images/cohere_embeddings.png" >
+                  <div class="layer">
+                      <h3>Chatpdf using Cohere multilanguage Embeddings</h3>
+                      <p> The pdf chatbot is a Python application that allows you to chat with multiple PDF documents. 
+                          You can ask questions about the PDFs using natural language, and the application will provide relevant 
+                          responses based on the content of the documents. Please note that the app will only respond to questions 
+                          related to the loaded PDFs.
+                      </p>
+                      <a href="https://github.com/Manuel0104/pdf_chat_cohere_openai_embeddings"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="assets/images/Alpaca2_spanish_qlora.png" >
+                  <div class="layer">
+                      <h3>Finetune Llama2 using qlora</h3>
+                      <p> 
+                          Finetune of Llama2_7B_chat using a Spanish dataset. 
+                          The aim of this project is to finetune the model using an alpaca 
+                          Spanish dataset to be able to answer questions in Spanish.
+                      </p>
+                      <a href="https://huggingface.co/manuelfer91294/Alpaca2_spanish_qlora"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="assets/images/work-4.png" >
+                  <div class="layer">
+                      <h3>Medical_diagnostics_from_images_GPT4</h3>
+                      <p>
+                          This generative AI App allows you to analyze an image and get the diagnostics of a particular disease using GPT-4. You can also get the findings, possible symptoms and treatments. 
+                      </p>
+                      <a href="https://github.com/Manuel0104/Medical_diagnostics_from_images_GPT4"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="assets/images/work-5.png" >
+                  <div class="layer">
+                      <h3>Azure_OpenAIsearch_indexingdata</h3>
+                      <p>
+                          Azure Enterprise Private GPT App built using Azure AI Search and Azure Open AI Models.
+                      </p>
+                      <a href="https://github.com/Manuel0104/Azure_OpenAI_INDEXING"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>
+              </div>  
+          </div> 
+              <a href="https://github.com/Manuel0104?tab=repositories" class="btn">See more</a>
+          </div>
+      </div>
+    </div>
+    <!------------contact--------->
+    <div id="contact">
+      <div class="container">
+          <div class="row">
+              <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <div class="social-icons">
+                      <a href="https://www.linkedin.com/in/manuel-flores-cuenca-8bb505126/"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="https://github.com/Manuel0104"><i class="fa-brands fa-github"></i></a>
+                      <a href="https://huggingface.co/manuelfer91294/Alpaca2_spanish_qlora"><i class="fa-solid fa-h"></i></a>
+                      <a href="https://twitter.com/manuelfer912"><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+              </div>
+              <div class="contact-right">
+                  <form>
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="email" placeholder="Your email" required>
+                      <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+          for(tablink of tablinks){
+              tablink.classList.remove("active-link");
+  
+          }
+          for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+              
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab")
+      }
+    </script>
+    <script>
+      var sidemeu = document.getElementById("sidemenu")
+  
+      function openmenu(){
+          sidemeu.style.right = "0";
+      }
+      function closemenu(){
+          sidemeu.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
